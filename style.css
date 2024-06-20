@@ -145,7 +145,7 @@ span {
                 .about-content p {font-size: 1.6em;
                 margin: 2rem 0 3rem
             }
-           /*portfolio*/
+         /*portfolio*/
 .portfolio {
     background: var(--second-bg-color);
     padding: 2rem 0;
@@ -174,7 +174,8 @@ span {
 
 .portfolio-box img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
     transition: transform .5s ease;
 }
 
@@ -225,6 +226,19 @@ span {
 .portfolio-layer a i {
     font-size: 2rem;
     color: var(--second-bg-color);
+}
+
+/* Additional padding between heading and portfolio boxes */
+.portfolio h2 {
+    margin-bottom: 6rem;
+}
+
+/* Ensuring images fit within the box */
+.portfolio-box img {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    object-fit: cover;
 }
 
 
